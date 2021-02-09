@@ -1,0 +1,96 @@
+.header {
+    width: 100%;
+    padding: 10px;
+    background-color: #00121b;
+    position: relative;
+  }
+  
+  .header__nav {
+    display: inline;
+  }
+  
+  .header__title {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
+  }
+  
+  .header__title a {
+    color: white;
+    font-weight: 900;
+    text-decoration: none;
+  }
+  
+  .header__btn {
+    display: none;
+  }
+  
+  .header__links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+  }
+  
+  .header__links > a {
+    display: inline-block;
+    padding: 13px 18px;
+    text-decoration: none;
+    color: #efefef;
+    font-weight: 100;
+  }
+  
+  .header__links > a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  #header__check {
+    display: none;
+  }
+  
+  @media (max-width:600px) {
+    .header__btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .header__btn > label {
+      display: inline-block;
+      width: 50px;
+      padding: 18px 0;
+    }
+    .header__btn > label:hover,
+    .header  #header__check:checked ~ .header__btn > label {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .header__btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+      margin: 0 auto;
+    }
+    .header__links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #333;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 65px;
+      left: 0px;
+    }
+    .header__links > a {
+      display: block;
+      width: 100%;
+    }
+    #header__check:not(:checked) ~ .header__links {
+      height: 0px;
+    }
+    #header__check:checked ~ .header__links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+  }

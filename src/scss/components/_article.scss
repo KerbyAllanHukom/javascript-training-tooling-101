@@ -1,0 +1,161 @@
+.hero-article img {
+    width: 100%;
+}
+
+.category-menu {
+  background: #505050;
+  color: white;
+  margin-top: -3px;
+  width: 100%;
+}
+
+.category-menu ul {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 20px 0;
+}
+
+.category-menu ul li {
+  display: block;
+  font-weight: 900;
+  padding: 10px;
+}
+
+.category-menu ul li:hover {
+  border-bottom: 5px solid #ff9800;
+  color: #ff9800;
+}
+
+.category-menu ul li a {
+  cursor: pointer;
+}
+
+.article-main-content {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0;
+  padding: 10px;
+}
+
+.article-featured-content {
+  width: 580px;
+  height: 900px;
+  overflow: hidden;
+  position: relative;
+}
+
+.article-featured-content:hover .article-featured-content-title p,
+.article-sub-content:hover .article-sub-content-title p {
+  color: #ff9800;
+}
+
+.article-featured-content img,
+.article-sub-content img {
+  width: 100%;
+}
+
+.article-featured-content-title,
+.article-sub-content-title {
+  position: absolute;
+  bottom: 0;
+  background: black;
+  opacity: 0.8;
+  text-align: center;
+  width: 100%;
+}
+
+.article-featured-content-title p,
+.article-sub-content-title p {
+  color: white;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.article-right-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.article-sub-content {
+  height: 210px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* RELATED ARTICLES */
+
+.related-articles-heading {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.related-articles-container {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.related-articles a {
+  color: black;
+  text-decoration: none;
+  text-align: left;
+}
+
+.related-articles a:hover  {
+  color: #ff9800;
+}
+
+.related-articles-container h2 {
+  text-transform: uppercase;
+}
+
+.related-articles-container p span {
+  font-style: italic;
+  font-weight: 300;
+}
+
+.related-articles {
+  width: 33.33333%;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.related-articles img {
+  width: 100%;
+  height: 180px;
+}
+
+.posts__options {
+  text-align: center;
+}
+
+.posts__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 0;
+}
+
+.posts__list-content {
+  display: block;
+  padding: 10px;
+  width: 33.3%;
+
+  img {
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  a {
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+
+  p {
+    font-style: italic;
+  }
+}
