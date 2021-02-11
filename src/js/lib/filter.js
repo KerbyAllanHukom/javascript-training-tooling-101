@@ -10,3 +10,17 @@ export function filterPosts() {
     }
     fetchPosts(filteredPosts);
 }
+
+export function filterA() {
+    console.log(1);
+}
+
+export function filterB() {
+    console.log(2);
+}
+
+export function filterC() {
+    console.log(3);
+}
+
+export default {filterA, filterB, filterC, filterPosts}

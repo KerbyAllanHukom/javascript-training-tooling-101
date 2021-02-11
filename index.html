@@ -2,170 +2,174 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="./dist/css/main.css">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Home</title>
+		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="./dist/css/main.css">
 
-    <script src="./dist/js/bundle.js" defer></script>
+		<script src="./dist/js/bundle.js" defer></script>
 </head>
 
 <body>
 
-    <header class="header">
-        <input type="checkbox" id="header__check">
-        <nav class="header__nav">
-          <div class="header__title">
-            <a href="./index.html">THE JUDGE</a>
-          </div>
-        </nav>
-        <nav class="header__btn">
-          <label for="header__check">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
-        </nav>
-        
-        <nav class="header__links">
-          <a href="./index.html">Home</a>
-          <a href="#" target="_blank">About</a>
-          <a href="./contact.html">Contact Us</a>
-        </nav>
-      </header>
-  
-      <main>
-        <!-- Welcome Section -->
-        <section id="hero" class="hero">
-          <h1>Hey, I'm Kerby &#128075;</h1>
-          <p class="hero__title">Check out my Front-End Training here</p>
-          <a href="#projects">
-            <div class="hero__arrow"></div>
-          </a>
-        </section>
-        <!-- End Welcome Section -->
-  
-        <!-- Project Section -->
-        <section id="projects" class="projects">
-          <h2 class="projects__header">The Judge's Projects</h2>
-          <div class="projects__container">
-            <div class="projects__grid">
-              <div class="projects__cell">
-                <a href="#" target="_blank" class="projects__tile">
-                  <img src="./src/images/naruto.jpg" alt="Details Page" class="projects__image">
-                  <p class="projects__name">Details Page</p>
-                </a>
-              </div>
-              <div class="projects__cell">
-                <a href="#" target="_blank" class="projects__tile">
-                  <img src="./src/images/hero.jpg" alt="Product Landing Page Project" class="projects__image">
-                  <p class="projects__name">Archive Page</p>
-                </a>
-              </div>
-              <div class="projects__cell">
-                <a href="https://slamoureux.github.io/technical-doc/" target="_blank" class="projects__tile">
-                  <img src="./src/images/github.jpg" alt="Github" class="projects__image">
-                  <p class="projects__name">Github</p>
-                </a>
-              </div>
-              <div class="projects__cell">
-                <a href="https://slamoureux.github.io/tribute-page/" target="_blank" class="projects__tile">
-                  <img src="./src/images/codepen.jpg" alt="Codepen" class="projects__image">
-                  <p class="projects__name">Codepen</p>
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- End Project Section -->
+	<header class="header">
+		<input type="checkbox" id="header__check">
+		<nav class="header__nav">
+			<div class="header__title">
+				<a href="./index.html">THE JUDGE</a>
+			</div>
+		</nav>
+		
+		<nav class="header__btn">
+			<label for="header__check">
+				<span></span>
+				<span></span>
+				<span></span>
+			</label>
+		</nav>
+		
+		<nav class="header__links">
+			<a href="./index.html">Home</a>
+			<a href="#" target="_blank">About</a>
+			<a href="./contact.html">Contact Us</a>
+		</nav>
+	</header>
 
-        <section>
-          <div class="container">
-            <ul class="featured__posts">
-            </ul>
-          </div>
-        </section>
-  
-        <!-- Contact Section -->
-        <section id="contact" class="contact">
-          <h2 class="contact__header">@</h2>
-          <p class="contact__social">Follow me on these platforms</p>
-          <div class="contact__flex">
-            <a href="https://github.com/KerbyAllanHukom" target="_blank" class="contact__icon-links"><i class="fab fa-github"></i>
-              Github</a>
-            <a href="https://codepen.io/Kerby-Hukom" target="_blank" class="contact__icon-links"><i class="fab fa-codepen"></i>
-              Codepen</a>
-          </div>
-          <div class="form_container">
-            <form>
-              <p class="form__title">Send me an e-mail</p>
-              <fieldset>
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">E-mail</label>
-                <input type="email" id="email" name="email" required>
-              </fieldset>
-              <fieldset class="message">
-                <textarea id="message" name="message" required placeholder="Enter a Message"></textarea>
-              </fieldset>
-              <button type="submit">Submit</button>
-            </form>
-          </div>
-        </section>
-        <!-- End Contact Section -->
-      </main>
-  
-      <footer class="footer">
-        <div class="footer__inner">
-      
-      <!--  for company name and description -->
-          <div class="footer__items">
-            <h1>THE JUDGE</h1>
-            <p>Front-End Training 201</p>
-          </div>
-      
-      <!--  for quick links  -->
-          <div class="footer__items">
-            <h3>Menu</h3>
-            <div class="footer__border"></div> <!--for the underline -->
-              <ul>
-                <a href="./index.html"><li>Home</li></a>
-                <a href="#"><li>About</li></a>
-                <a href="./contact.html"><li>Contact Us</li></a>
-              </ul>
-          </div>
-      
-      <!--  for some other links -->
-          <div class="footer__items">
-            <h3>Quick Links</h3>
-            <div class="footer__border"></div>  <!--for the underline -->
-              <ul>
-                <a href="#naruto-shipuuden"><li>Naruto</li></a>
-                <a href="#one-piece"><li>One Piece</li></a>
-                <a href="#dragon-ball-z"><li>Dragon Ball Z</li></a>
-                <a href="#hunter-x-hunter"><li>Hunter X Hunter</li></a>
-                <a href="#one-punch-man"><li>One-Punch Man</li></a>
-              </ul>
-          </div>
-      
-      <!--  for contact us info -->
-          <div class="footer__items">
-            <h3>Contact us</h3>
-            <div class="footer__border"></div>
-              <ul>
-                <li>Code and Theory</li>
-                <li>Manila, Philippines</li>
-                <li><a href="mailto:kerby.allan.hukom@codeandtheory.com"> kerby.allan.hukom@codeandtheory.com</a></li>
-              </ul> 
-          </div>
-        </div>
-        
-      <!--   Footer Bottom start  -->
-        <div class="footer__bottom">
-          Copyright &copy; Code and Theory 2021.
-        </div>
-      </footer>
+	<main>
+		<!-- Preloader Section -->
+		<aside class="preloader">
+			<img src="./src/images/preloader.svg" alt="">
+		</aside>
+		<!-- End Preloader Section -->
+
+		<!-- Welcome Section -->
+		<section id="hero" class="hero">
+			<h1>Hey, I'm Kerby &#128075;</h1>
+			<p class="hero__title">Check out my Front-End Training here</p>
+			<a href="#projects">
+				<div class="hero__arrow"></div>
+			</a>
+		</section>
+		<!-- End Welcome Section -->
+
+		<!-- Project Section -->
+		<section id="projects" class="projects">
+			<h2 class="projects__header">The Judge's Projects</h2>
+			<div class="projects__container">
+				<div class="projects__grid">
+					<div class="projects__cell">
+						<a href="#" target="_blank" class="projects__tile">
+							<img src="./src/images/naruto.jpg" alt="Details Page" class="projects__image">
+							<p class="projects__name">Details Page</p>
+						</a>
+					</div>
+					<div class="projects__cell">
+						<a href="#" target="_blank" class="projects__tile">
+							<img src="./src/images/hero.jpg" alt="Product Landing Page Project" class="projects__image">
+							<p class="projects__name">Archive Page</p>
+						</a>
+					</div>
+					<div class="projects__cell">
+						<a href="https://slamoureux.github.io/technical-doc/" target="_blank" class="projects__tile">
+							<img src="./src/images/github.jpg" alt="Github" class="projects__image">
+							<p class="projects__name">Github</p>
+						</a>
+					</div>
+					<div class="projects__cell">
+						<a href="https://slamoureux.github.io/tribute-page/" target="_blank" class="projects__tile">
+							<img src="./src/images/codepen.jpg" alt="Codepen" class="projects__image">
+							<p class="projects__name">Codepen</p>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Project Section -->
+
+		<!-- Featured Posts Section -->
+		<section>
+			<div class="container">
+				<ul class="featured__posts">
+				</ul>
+			</div>
+		</section>
+		<!-- End Featured Section -->
+
+		<!-- Contact Section -->
+		<section id="contact" class="contact">
+			<h2 class="contact__header">@</h2>
+			<p class="contact__social">Follow me on these platforms</p>
+			<div class="contact__flex">
+				<a href="https://github.com/KerbyAllanHukom" target="_blank" class="contact__icon-links"><i class="fab fa-github"></i>
+					Github</a>
+				<a href="https://codepen.io/Kerby-Hukom" target="_blank" class="contact__icon-links"><i class="fab fa-codepen"></i>
+					Codepen</a>
+			</div>
+			<div class="form_container">
+				<form>
+					<p class="form__title">Send me an e-mail</p>
+					<fieldset>
+						<label for="name">Name</label>
+						<input type="text" id="name" name="name" required>
+						<label for="email">E-mail</label>
+						<input type="email" id="email" name="email" required>
+					</fieldset>
+					<fieldset class="message">
+						<textarea id="message" name="message" required placeholder="Enter a Message"></textarea>
+					</fieldset>
+					<button type="submit">Submit</button>
+				</form>
+			</div>
+		</section>
+		<!-- End Contact Section -->
+	</main>
+
+	<footer class="footer">
+		<div class="footer__inner">
+	
+			<div class="footer__items">
+				<h1>THE JUDGE</h1>
+				<p>Front-End Training 201</p>
+			</div>
+	
+			<div class="footer__items">
+				<h3>Menu</h3>
+				<div class="footer__border"></div> <!--for the underline -->
+					<ul>
+						<a href="./index.html"><li>Home</li></a>
+						<a href="#"><li>About</li></a>
+						<a href="./contact.html"><li>Contact Us</li></a>
+					</ul>
+			</div>
+	
+			<div class="footer__items">
+				<h3>Quick Links</h3>
+				<div class="footer__border"></div>  <!--for the underline -->
+					<ul>
+						<a href="#naruto-shipuuden"><li>Naruto</li></a>
+						<a href="#one-piece"><li>One Piece</li></a>
+						<a href="#dragon-ball-z"><li>Dragon Ball Z</li></a>
+						<a href="#hunter-x-hunter"><li>Hunter X Hunter</li></a>
+						<a href="#one-punch-man"><li>One-Punch Man</li></a>
+					</ul>
+			</div>
+	
+			<div class="footer__items">
+				<h3>Contact us</h3>
+				<div class="footer__border"></div>
+					<ul>
+						<li>Code and Theory</li>
+						<li>Manila, Philippines</li>
+						<li><a href="mailto:kerby.allan.hukom@codeandtheory.com"> kerby.allan.hukom@codeandtheory.com</a></li>
+					</ul> 
+			</div>
+		</div>
+		
+		<div class="footer__bottom">
+			Copyright &copy; Code and Theory 2021.
+		</div>
+	</footer>
 
 </body>
 </html>

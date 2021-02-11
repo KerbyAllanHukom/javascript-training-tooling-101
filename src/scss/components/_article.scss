@@ -1,62 +1,62 @@
-.hero-article img {
+.hero_article img {
     width: 100%;
 }
 
-.category-menu {
+.category_menu {
   background: #505050;
   color: white;
   margin-top: -3px;
   width: 100%;
 }
 
-.category-menu ul {
+.category_menu ul {
   display: flex;
   justify-content: space-around;
   margin: 0;
   padding: 20px 0;
 }
 
-.category-menu ul li {
+.category_menu ul li {
   display: block;
   font-weight: 900;
   padding: 10px;
 }
 
-.category-menu ul li:hover {
+.category_menu ul li:hover {
   border-bottom: 5px solid #ff9800;
   color: #ff9800;
 }
 
-.category-menu ul li a {
+.category_menu ul li a {
   cursor: pointer;
 }
 
-.article-main-content {
+.article.main__container {
   display: flex;
   justify-content: space-between;
   margin: 50px 0;
   padding: 10px;
 }
 
-.article-featured-content {
+.article__featured {
   width: 580px;
   height: 900px;
   overflow: hidden;
   position: relative;
 }
 
-.article-featured-content:hover .article-featured-content-title p,
-.article-sub-content:hover .article-sub-content-title p {
+.article__featured:hover article__featured_title p,
+.article__subcontent:hover .article__subcontent_title p {
   color: #ff9800;
 }
 
-.article-featured-content img,
-.article-sub-content img {
+.article__featured img,
+.article__subcontent img {
   width: 100%;
 }
 
-.article-featured-content-title,
-.article-sub-content-title {
+.article__featured_title,
+.article__subcontent_title {
   position: absolute;
   bottom: 0;
   background: black;
@@ -65,20 +65,20 @@
   width: 100%;
 }
 
-.article-featured-content-title p,
-.article-sub-content-title p {
+.article__featured_title p,
+.article__subcontent_title p {
   color: white;
   font-size: 18px;
   font-weight: 900;
 }
 
-.article-right-content {
+.article.right__column {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.article-sub-content {
+.article__subcontent {
   height: 210px;
   overflow: hidden;
   position: relative;
@@ -86,7 +86,7 @@
 
 /* RELATED ARTICLES */
 
-.related-articles-heading {
+.related_articles_heading {
   text-align: center;
   text-transform: uppercase;
 }

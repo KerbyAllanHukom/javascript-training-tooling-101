@@ -10,7 +10,7 @@ const selectSort = $('.posts__sort');
 const selectFilter = $('.posts__filter');
 const featuredList = $('.featured__posts');
 
-let filteredPosts = [];
+const filteredPosts = [];
 
 const posts = [];
 
@@ -29,7 +29,9 @@ fetch('https://jsonplaceholder.typicode.com/posts')
     .then(response => response.json())
     .then(data => {
         featuredPosts.push(...data);
-        fetchPosts(featuredPosts, featuredList);
+        const totalPosts = featuredPosts.length;
+        const featuredPostsSliced = featuredPosts.slice(totalPosts - 5);
+        fetchPosts(featuredPostsSliced, featuredList);
     });
 
 const users = [];
@@ -93,8 +95,7 @@ function filterPosts() {
     fetchPosts(filteredPosts);
 }
 
-
 selectSort.addEventListener('change', sortPosts);
 selectFilter.addEventListener('change', filterPosts);
 
-})()
+})();

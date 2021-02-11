@@ -2,128 +2,180 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="./dist/css/main.css">
+	 <meta charset="UTF-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <title>Home</title>
+	 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+	 <link type="text/css" rel="stylesheet" href="./dist/css/main.css">
 
-    <script src="./dist/js/bundle.js" defer></script>
+	 <script src="./dist/js/bundle.js" defer></script>
 </head>
 
 <body>
 
-    <header class="header">
-        <input type="checkbox" id="header__check">
-        <nav class="header__nav">
-          <div class="header__title">
-            <a href="./index.html">THE JUDGE</a>
-          </div>
-        </nav>
-        <nav class="header__btn">
-          <label for="header__check">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
-        </nav>
-        
-        <nav class="header__links">
-          <a href="./index.html">Home</a>
-          <a href="#" target="_blank">About</a>
-          <a href="./contact.html">Contact Us</a>
-        </nav>
-      </header>
+	<header class="header">
+		<input type="checkbox" id="header__check">
+		<nav class="header__nav">
+			<div class="header__title">
+				<a href="./index.html">THE JUDGE</a>
+			</div>
+		</nav>
 
-    <main>
-        <aside class="preloader">
-            <img src="./src/images/preloader.svg" alt="">
-        </aside>
+		<nav class="header__btn">
+			<label for="header__check">
+				<span></span>
+				<span></span>
+				<span></span>
+			</label>
+		</nav>
+		
+		<nav class="header__links">
+			<a href="./index.html">Home</a>
+			<a href="#" target="_blank">About</a>
+			<a href="./contact.html">Contact Us</a>
+		</nav>
+	</header>
 
-        <!-- CATEGORY MENU -->
-    <div class="hero-article">
-        <img src="./src/images/article-hero.jpg">
-      </div>
-      <div class="category-menu">
-        <div class="container">
-          <ul>
-            <li><a>Genre</a></li>
-            <li><a>Manga</a></li>
-            <li><a>Games</a></li>
-            <li><a>Dubbed</a></li>
-            <li><a>Cosplay</a></li>
-          </ul>
-        </div>
-      </div>
-      
-      <main class="container">
-        <section class="article-main-content">
-          <article class="article-featured-content">
-            <a href="/fe-101/index.html#naruto-shipuuden">
-              <img src="./src/images/naruto-content-cover.jpg">
-              <div class="article-featured-content-title">
-                <p>What is the story behind Naruto's greatness?</p>
-              </div>
-            </a>
-          </article>
-          <div class="article-right-content">
-            <article class="article-sub-content">
-              <a href="">
-                <img src="./src/images/one-piece-content-cover.jpg">
-                <div class="article-sub-content-title">
-                  <p>Learn more about the crew of One-Piece</p>
-                </div>
-              </a>
-            </article>
-  
-            <article class="article-sub-content">
-              <a href="">
-                <img src="./src/images/dragon-ball-z-content-cover.jpeg">
-                <div class="article-sub-content-title">
-                  <p>Find out who's the strongest enemy of Goku</p>
-                </div>
-              </a>
-            </article>
-  
-            <article class="article-sub-content">
-              <a href="">
-                <img src="./src/images/hunter-x-hunter-content-cover.jpeg">
-                <div class="article-sub-content-title">
-                  <p>What is the main mission of Killua?</p>
-                </div>
-              </a>
-            </article>
-  
-            <article class="article-sub-content">
-              <a href="">
-                <img src="./src/images/one-punch-man-content-cover.jpeg">
-                <div class="article-sub-content-title">
-                  <p>What is the main skill of Saitama?</p>
-                </div>
-              </a>
-            </article>
-          </div>
-        </section>
-  
-        <section class="related-articles-heading">
-          <h2>Related Articles</h2>
-        </section>
+	<main>
+		<aside class="preloader">
+			<img src="./src/images/preloader.svg" alt="">
+		</aside>
 
-        <section class="posts">
-            <header class="posts__options">
-                <select name="sort" class="posts__sort">
-                    <option value="none">Sort Posts</option>
-                    <option value="ascPosts">Alphabetically Ascending</option>
-                    <option value="descPosts">Alphabetically Descending</option>
-                </select>
-                <select name="filter" class="posts__filter" disabled>
-                    <option value="all">Select User</option>
-                </select>
-            </header>
-            <ul class="posts__list">
-            </ul>
-        </section>
-    </main>
+		<!-- Hero for Article Page Section -->
+		<div class="hero_article">
+			<img src="./src/images/article-hero.jpg">
+		</div>
+		<!-- End of Hero for Article Page Section -->
+
+		<!-- Category Menu Section -->
+		<div class="category_menu">
+			<div class="container">
+				<ul>
+					<li><a>Genre</a></li>
+					<li><a>Manga</a></li>
+					<li><a>Games</a></li>
+					<li><a>Dubbed</a></li>
+					<li><a>Cosplay</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<main class="container">
+
+			<section class="article main__container">
+				<article class="article__featured">
+					<a href="/fe-101/index.html#naruto-shipuuden">
+						<img src="./src/images/naruto-content-cover.jpg">
+						<div class="article__featured_title">
+							<p>What is the story behind Naruto's greatness?</p>
+						</div>
+					</a>
+				</article>
+			 
+				<div class="article right__column">
+					<article class="article__subcontent">
+						<a href="">
+							<img src="./src/images/one-piece-content-cover.jpg">
+							<div class="article__subcontent_title">
+								<p>Learn more about the crew of One-Piece</p>
+							</div>
+						</a>
+				</article>
+  
+				<article class="article__subcontent">
+					<a href="">
+						<img src="./src/images/dragon-ball-z-content-cover.jpeg">
+						<div class="article__subcontent_title">
+							<p>Find out who's the strongest enemy of Goku</p>
+						</div>
+					</a>
+				</article>
+  
+				<article class="article__subcontent">
+				  <a href="">
+					 <img src="./src/images/hunter-x-hunter-content-cover.jpeg">
+					 <div class="article__subcontent_title">
+						<p>What is the main mission of Killua?</p>
+					 </div>
+				  </a>
+				</article>
+  
+				<article class="article__subcontent">
+					<a href="">
+						<img src="./src/images/one-punch-man-content-cover.jpeg">
+						<div class="article__subcontent_title">
+							<p>What is the main skill of Saitama?</p>
+						</div>
+					</a>
+				</article>
+			</section>
+
+			<section class="related_articles_heading">
+				<h2>Related Articles</h2>
+			</section>
+
+			<section class="posts">
+				<header class="posts__options">
+					 <select name="sort" class="posts__sort">
+							<option value="none">Sort Posts</option>
+							<option value="ascPosts">Alphabetically Ascending</option>
+							<option value="descPosts">Alphabetically Descending</option>
+					</select>
+					<select name="filter" class="posts__filter" disabled>
+						<option value="all">Select User</option>
+					</select>
+				</header>
+
+				<ul class="posts__list">
+				</ul>
+			</section>
+	 </main>
+
+	<footer class="footer">
+		<div class="footer__inner">
+	
+			<div class="footer__items">
+				<h1>THE JUDGE</h1>
+				<p>Front-End Training 201</p>
+			</div>
+	
+			<div class="footer__items">
+				<h3>Menu</h3>
+				<div class="footer__border"></div> <!--for the underline -->
+					<ul>
+						<a href="./index.html"><li>Home</li></a>
+						<a href="#"><li>About</li></a>
+						<a href="./contact.html"><li>Contact Us</li></a>
+					</ul>
+			</div>
+	
+			<div class="footer__items">
+				<h3>Quick Links</h3>
+				<div class="footer__border"></div>  <!--for the underline -->
+					<ul>
+						<a href="#naruto-shipuuden"><li>Naruto</li></a>
+						<a href="#one-piece"><li>One Piece</li></a>
+						<a href="#dragon-ball-z"><li>Dragon Ball Z</li></a>
+						<a href="#hunter-x-hunter"><li>Hunter X Hunter</li></a>
+						<a href="#one-punch-man"><li>One-Punch Man</li></a>
+					</ul>
+			</div>
+	
+			<div class="footer__items">
+				<h3>Contact us</h3>
+				<div class="footer__border"></div>
+					<ul>
+						<li>Code and Theory</li>
+						<li>Manila, Philippines</li>
+						<li><a href="mailto:kerby.allan.hukom@codeandtheory.com"> kerby.allan.hukom@codeandtheory.com</a></li>
+					</ul> 
+			</div>
+		</div>
+		
+		<div class="footer__bottom">
+			Copyright &copy; Code and Theory 2021.
+		</div>
+	</footer>
 
 </body>
 </html>
