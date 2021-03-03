@@ -10,7 +10,7 @@ const selectSort = $('.posts__sort');
 const selectFilter = $('.posts__filter');
 const featuredList = $('.featured__posts');
 
-const filteredPosts = [];
+let filteredPosts = [];
 
 const posts = [];
 
@@ -20,7 +20,10 @@ fetch('https://jsonplaceholder.typicode.com/posts')
         posts.push(...data);
         filteredPosts.push(...data);
         preloader.classList.add('is-hidden');
-        fetchPosts(posts, postsList);
+        if (postsList) {
+            fetchPosts(posts, postsList);
+        }
+        
     });
 
 const featuredPosts = [];
@@ -31,7 +34,10 @@ fetch('https://jsonplaceholder.typicode.com/posts')
         featuredPosts.push(...data);
         const totalPosts = featuredPosts.length;
         const featuredPostsSliced = featuredPosts.slice(totalPosts - 5);
-        fetchPosts(featuredPostsSliced, featuredList);
+        if (featuredList ) {
+            fetchPosts(featuredPostsSliced, featuredList);
+        }
+        console.log(featuredList);
     });
 
 const users = [];
@@ -40,7 +46,10 @@ fetch('https://jsonplaceholder.typicode.com/users')
     .then(response => response.json())
     .then(data => {
         users.push(...data);
-        selectFilter.disabled = false;
+        if (selectFilter) {
+            selectFilter.disabled = false;
+        }
+        
         setUserOptions(users); 
     });
     
@@ -65,7 +74,9 @@ function setUserOptions() {
         `;
     })
     .join("");
-    selectFilter.insertAdjacentHTML('beforeend', userOptions);
+    if ( selectFilter ) {
+        selectFilter.insertAdjacentHTML('beforeend', userOptions);
+    }
 }
 
 function sortPosts() {
@@ -79,12 +90,18 @@ function sortPosts() {
             filteredPosts.sort((a, b) => a.title < b.title ? 1 : -1);
             break;
     }
-    fetchPosts(filteredPosts);
+    if (postsList ) {
+        fetchPosts(filteredPosts, postsList);
+    }
 }
 
 function filterPosts() {
     filteredPosts = [...posts];
     const filterOption = this.selectedOptions[0].value;
+
+    console.log(filterOption);
+    console.log(filteredPosts);
+    
     const sortValue = selectSort.value;
     if (filterOption !== 'all') {
         filteredPosts = filteredPosts.filter(post => post.userId === parseInt(filterOption));
@@ -92,10 +109,18 @@ function filterPosts() {
     if (sortValue !== 'none') {
         sortPosts();
     }
-    fetchPosts(filteredPosts);
+    if (postsList) {
+        fetchPosts(filteredPosts, postsList);
+    }
+    
 }
 
-selectSort.addEventListener('change', sortPosts);
-selectFilter.addEventListener('change', filterPosts);
+if ( selectSort) { 
+    selectSort.addEventListener('change', sortPosts);
+}
+
+if (selectFilter) { 
+    selectFilter.addEventListener('change', filterPosts);
+}
 
 })();

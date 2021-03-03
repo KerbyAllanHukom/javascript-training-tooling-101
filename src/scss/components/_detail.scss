@@ -1,0 +1,159 @@
+.heading__detail {
+    text-align: center;
+  }
+  
+  .heading__detail h3 {
+    margin: 0;
+    font-weight: 300;
+  }
+  
+  .hero__detail img {
+      width: 100%;
+  }
+  
+  .content {
+    margin-top: 50px;
+  }
+  
+  .content .list {
+    padding-bottom: 40px;
+    border-bottom: 2px dotted gray;
+  }
+  
+  .content:last-child .list {
+    border-bottom: 0;
+  }
+  
+  .content .list h3 {
+    font-weight: 900;
+  }
+  
+  .content .list span {
+    font-style: italic;
+    font-weight: 300;
+  }
+  
+  .content .list .featured {
+    width: 100%;
+  }
+  
+  .inset img {
+    float: left;
+    width: 500px;
+    margin-right: 20px;
+  }
+  
+  @media screen and (max-width: 520px) {
+    .inset {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .inset img {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+  
+  .form__title {
+    text-align: center;
+    color: #ff9800;
+    font-size: 1.6rem;
+    font-style: italic;
+    margin-bottom: 30px;
+    padding-top: 0.5rem;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .form__title {
+      font-size: 1.3rem;
+    }
+  }
+  
+  .form_container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  form {
+    width: 50%;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background: #f4f7f8;
+    border-radius: 8px;
+  }
+  
+  @media screen and (max-width: 1000px) {
+    form {
+      width: 75%;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    form {
+      width: 100%;
+    }
+  }
+  
+  fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  legend {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+    padding-bottom: 0.3rem;
+    color: #232931;
+    font-size: 1.1rem;
+  }
+  
+  @media screen and (max-width: 767px) {
+    label {
+      font-size: 1rem;
+    }
+  }
+  
+  input,
+  textarea {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    font-size: 18px;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: 15px;
+    width: 100%;
+    background-color: #e8eeef;
+    color: #8a97a0;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+    margin-bottom: 30px;
+  }
+  
+  button {
+    padding: 19px 39px 18px 39px;
+    color: #eeeeee;
+    background-color: #ff9800;
+    font-size: 1.3rem;
+    text-align: center;
+    font-style: normal;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  @media screen and (max-width: 767px) {
+    button {
+      font-size: 1.1rem;
+    }
+  }
+  
+  button:hover {
+    color: #232931;
+  }
